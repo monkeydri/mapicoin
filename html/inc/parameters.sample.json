@@ -1,6 +1,6 @@
 {
     "mysql": {
-        "host"     : "localhost",
+        "host"     : "db",
         "port"     : 3306,
         "login"    : "mapicoin",
         "password" : "pleasechangeme",
