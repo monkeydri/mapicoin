@@ -18,5 +18,5 @@ services:
     ports:
       - "8080:80"
     volumes:
-        - ./docker/vhost.conf:/etc/apache2/sites-enabled/mapicoin.conf
-        - .:/var/www/html
+      - ./docker/vhost.conf:/etc/apache2/sites-enabled/mapicoin.conf
+      - ./html:/var/www/html
