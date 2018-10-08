@@ -81,6 +81,13 @@ $_MYSQLI = mysqli_connect(
     $_CONFIG->mysql->database,
     $_CONFIG->mysql->port
 );
+
+if (mysqli_connect_errno())
+{  
+	printf("Connect failed: %s\n", mysqli_connect_error()); 
+	exit();
+}
+
 $_MYSQLI->set_charset($_CONFIG->mysql->charset);
 // ===
 // Requires
